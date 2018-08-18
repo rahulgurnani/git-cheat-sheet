@@ -74,11 +74,20 @@ git checkout <branch-name>
 git rebase master
 ```
 
-TODO : This may result in merge conflicts: 
+This may result in merge conflicts, with conflict markers like 
+```
+<<<<<<< HEAD
+...
+=======
+...
+>>>>>>> branch-a
+```
+You need to edit such conflict sections, depending on what you want to keep etc.
+Post fixing all such confilcts, you will have to do ```git rebase --continue```
 
 ## Stashing/Avoiding local changes
 ### Stashing
-In case, you may want them in future, good idea to stash them
+In case, you may want the local changes in future but want to get rid of them as of now, good idea to stash them
 ```
 git add <new-files>		# newly added files don't get stashed if you try to stash them without adding
 git stash 				# In case you want to stash specific files, you can: git stash push <file-name> , this is available from git 2.13 onwards
