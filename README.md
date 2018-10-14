@@ -1,5 +1,5 @@
 # Everyday Commands (for beginners)
-I tried to order them in the order you will require to use them.
+I tried to order them in the order in which one may require them
 ## Cloning a repository
 Usually the first step you take when you start working with git, you clone a remote repository
 ```
@@ -144,6 +144,11 @@ git diff --name-status master
 Actuall diff for file across branches :
 ```
 git diff master:foo foo
+```
+## cherry-pick
+
+```
+git cherry-pick -x <COMMIT-ID>
 ```
 ## Git commit messages, best practices
 TODO: read articles and update this.
