@@ -146,9 +146,10 @@ Actuall diff for file across branches :
 git diff master:foo foo
 ```
 ## cherry-pick
-
+When you have a specific commit you wish to cherry pick that commit over another branch:
 ```
 git cherry-pick -x <COMMIT-ID>
 ```
+The -x option creates cherry pick stamp with the commit.
 ## Git commit messages, best practices
 TODO: read articles and update this.
