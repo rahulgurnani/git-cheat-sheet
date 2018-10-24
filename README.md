@@ -153,3 +153,7 @@ git cherry-pick -x <COMMIT-ID>
 The -x option creates cherry pick stamp with the commit.
 ## Git commit messages, best practices
 TODO: read articles and update this.
+
+## References
+commit message [https://udacity.github.io/git-styleguide/]
+git history [http://www.bitsnbites.eu/a-tidy-linear-git-history/]
