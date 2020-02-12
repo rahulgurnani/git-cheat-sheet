@@ -64,6 +64,15 @@ Frequently, we want to merge our current changes in the previous commit, in that
 ```
 git commit --amend
 ```
+## Discarding changes
+For discarding changes in a file:
+```
+git checkout <path-to-file>
+```
+Patch wise discard
+```
+git checkout -p
+```
 
 ## Syncing with master
 There are many ways of doing this, but the one that I prefer is, first checkout master, then pull master, then checkout branch and then rebase to master
@@ -145,12 +154,18 @@ Actuall diff for file across branches :
 ```
 git diff master:foo foo
 ```
-## cherry-pick
+## Cherry-pick
 When you have a specific commit you wish to cherry pick that commit over another branch:
 ```
 git cherry-pick -x <COMMIT-ID>
 ```
+Cherry pick a merge commit:
+```
+git cherry-pick -m 1 -x <mergecommitid>
+```
 The -x option creates cherry pick stamp with the commit.
+
+
 ## Git commit messages, best practices
 TODO: read articles and update this.
 
