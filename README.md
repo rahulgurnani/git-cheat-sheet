@@ -55,6 +55,11 @@ Many times, it's useful to add changes in patches, also reviewing them on the wa
 git add -p
 ```
 
+Add all files (includes deleted files)
+```
+git add -A
+```
+
 ## Committing changes
 Whenever adding a new commit, you can do:
 ```
