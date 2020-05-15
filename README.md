@@ -6,24 +6,25 @@ Usually the first step you take when you start working with git, you clone a rem
 git clone <url-to-repo.git>
 ```
 ## Converting local directory to git repository
-When you create a repository and want to use version control it :
+When you have a repository you want to version control:
 ```
 git init
 ```
 ## View Branches
-Shows all the branches which
+Shows all the branches present locally:
 ```
-git branch -vv
-```
-```
-git branch
+git branch --list
 ```
 See all the branches 
 ```
 git branch -a
 ```
+```
+git show-branch -a
+```
 
 ## Checkout another branch
+If the branch already exists
 ```
 git checkout <branch-name>
 ```
@@ -32,7 +33,7 @@ In case you want to create a new branch
 git checkout -b <branch-name>
 ```
 
-## Status of branch
+## Files that have been changed locally on the current branch
 ```
 git status
 ```
@@ -172,8 +173,8 @@ The -x option creates cherry pick stamp with the commit.
 
 
 ## Git commit messages, best practices
-TODO: read articles and update this.
+1. [How to write commit messages](https://chris.beams.io/posts/git-commit/)
+2. [A Style guide followed widely in the JS community](https://udacity.github.io/git-styleguide/)
 
 ## References
-commit message [https://udacity.github.io/git-styleguide/]
-git history [http://www.bitsnbites.eu/a-tidy-linear-git-history/]
+[Linear git history](http://www.bitsnbites.eu/a-tidy-linear-git-history/)
